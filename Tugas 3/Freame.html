@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tugas 3 HTML Frameset</title>
+</head>
+    
+<!-- Baris: Header (20%), Menu (10%), Konten (60%), Footer (10%) -->
+<frameset rows="20%, 10%, 60%, 10%" border="1">
+    <!-- Header -->
+    <frame src="header.html" name="header" scrolling="no" noresize>
+
+    <!-- Menu Navbar (di bawah header) -->
+    <frame src="menu.html" name="menu" scrolling="no" noresize>
+
+    <!-- Konten utama: kiri - main - kanan -->
+    <frameset cols="20%, 60%, 20%" border="1">
+        <frame src="left.html" name="left" noresize>
+        <frame src="home.html" name="main">
+        <frame src="right.html" name="right" noresize>
+    </frameset>
+
+    <!-- Footer -->
+    <frame src="footer.html" name="footer" scrolling="no" noresize>
+</frameset>
+</html>
