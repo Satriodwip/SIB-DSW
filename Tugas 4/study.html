@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jadwal</title>
+  </head>
+  <style>
+    .table {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-collapse: collapse;
+      width: 100%;
+      border: 1;
+    }
+    .table th, 
+    .table td{
+        border: 1px solid black;
+        padding: 12px;
+        text-align: justify;
+
+    }
+    .table th{
+        background-color: cyan;
+        text-align: center;
+    }
+  </style>
+  <body>
+    <h2 style="text-align: center;">Jadwal Mata Kuliah</h2>
+    <table class="table">
+      <tr>
+        <th>Hari</th>
+        <th>Jam</th>
+        <th>Mata Kuliah</th>
+        <th>Dosen</th>
+        <th>Ruang</th>
+      </tr>
+      <tr>
+        <td rowspan="2">Senin</td>
+        <td>08.00 - 10.00</td>
+        <td>Kajian Islam</td>
+        <td>Ust. Anwar Nashidin, Lc.</td>
+        <td>Ruang Teori</td>
+      </tr>
+      <tr>
+        <td>10.00 - 12.00</td>
+        <td>Aplikasi Perkantoran</td>
+        <td>Drs. MGS Hendri, M.M</td>
+        <td rowspan="5">Ruang 1</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Selasa</td>
+        <td>08.00 - 10.00</td>
+        <td>Linux Fundamental</td>
+        <td>Henry Saptono, S.Si, M.Kom</td>
+      </tr>
+      <tr>
+        <td>10.00 - 12.00</td>
+        <td>HTML, Css & Javascript</td>
+        <td rowspan="3">Sirojul Munir, S.Si, M.Kom</td>
+      </tr>
+      <tr>
+        <td rowspan="2">Rabu</td>
+        <td>8.00 - 10.00</td>
+        <td>Basis Data</td>
+      </tr>
+      <tr>
+        <td>10.00 - 12.00</td>
+        <td>Algoritma dan Pemograman</td>
+      </tr>
+      <tr>
+        <td rowspan="2">KAMIS</td>
+        <td>08:00 - 10:00</td>
+        <td>Kewirausahaan & Pengembangan Diri</td>
+        <td>Khoirul Umam, S.Pd</td>
+        <td rowspan="2">Ruang Teori</td>
+      </tr>
+      <tr>
+        <td>10:00 - 12:00</td>
+        <td>Bahasa Inggris</td>
+        <td>Drs. Mahfudz</td>
+      </tr>
+      <tr>
+        <td colspan="5" rowspan="2" style="text-align: center; font-weight: bold; background-color: cyan;">JADWAL DAPAT BERUBAH SEWAKTU WAKTU</td>
+      </tr>  
+    </table>
+  </body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gallery</title>
+    <style>
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f3f4f6; /* bg-gray-100 */
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+        gap: 1rem;
+        padding: 1rem;
+        width: 90%;
+        max-width: 800px;
+      }
+
+      .gallery img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 0.5rem;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+
+      .gallery img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Gallery Grid -->
+    <div class="gallery">
+      <img src="https://images.pexels.com/photos/208984/pexels-photo-208984.jpeg" alt="Foto 1" />
+      <img src="https://images.pexels.com/photos/69932/tabby-cat-close-up-portrait-69932.jpeg" alt="Foto 2" />
+      <img src="https://images.pexels.com/photos/774731/pexels-photo-774731.jpeg" alt="Foto 3" />
+      <img src="https://images.pexels.com/photos/1543793/pexels-photo-1543793.jpeg" alt="Foto 4" />
+    </div>
+  </body>
+</html>
